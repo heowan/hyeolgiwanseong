@@ -14,6 +14,10 @@
 		04972A4A2C7C3BE20088AA0E /* hyeolgiwanseong.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04972A482C7C3BE20088AA0E /* hyeolgiwanseong.xcdatamodeld */; };
 		04972A4C2C7C3BE40088AA0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04972A4B2C7C3BE40088AA0E /* Assets.xcassets */; };
 		04972A4F2C7C3BE40088AA0E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 04972A4E2C7C3BE40088AA0E /* Base */; };
+		04A943D82C8705F40010D855 /* Trial+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D42C8705F40010D855 /* Trial+CoreDataClass.swift */; };
+		04A943D92C8705F40010D855 /* Trial+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D52C8705F40010D855 /* Trial+CoreDataProperties.swift */; };
+		04A943DA2C8705F40010D855 /* Measurement+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D62C8705F40010D855 /* Measurement+CoreDataClass.swift */; };
+		04A943DB2C8705F40010D855 /* Measurement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D72C8705F40010D855 /* Measurement+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		04972A4B2C7C3BE40088AA0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04972A4E2C7C3BE40088AA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04972A502C7C3BE40088AA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A943D42C8705F40010D855 /* Trial+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trial+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04A943D52C8705F40010D855 /* Trial+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trial+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04A943D62C8705F40010D855 /* Measurement+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04A943D72C8705F40010D855 /* Measurement+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		04972A3E2C7C3BE20088AA0E /* hyeolgiwanseong */ = {
 			isa = PBXGroup;
 			children = (
+				04A9437B2C86F6D60010D855 /* Model */,
 				04972A3F2C7C3BE20088AA0E /* AppDelegate.swift */,
 				04972A412C7C3BE20088AA0E /* SceneDelegate.swift */,
 				04972A432C7C3BE20088AA0E /* ViewController.swift */,
@@ -68,6 +77,17 @@
 				04972A482C7C3BE20088AA0E /* hyeolgiwanseong.xcdatamodeld */,
 			);
 			path = hyeolgiwanseong;
+			sourceTree = "<group>";
+		};
+		04A9437B2C86F6D60010D855 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A943D42C8705F40010D855 /* Trial+CoreDataClass.swift */,
+				04A943D52C8705F40010D855 /* Trial+CoreDataProperties.swift */,
+				04A943D62C8705F40010D855 /* Measurement+CoreDataClass.swift */,
+				04A943D72C8705F40010D855 /* Measurement+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A943D82C8705F40010D855 /* Trial+CoreDataClass.swift in Sources */,
+				04A943D92C8705F40010D855 /* Trial+CoreDataProperties.swift in Sources */,
+				04A943DA2C8705F40010D855 /* Measurement+CoreDataClass.swift in Sources */,
+				04A943DB2C8705F40010D855 /* Measurement+CoreDataProperties.swift in Sources */,
 				04972A442C7C3BE20088AA0E /* ViewController.swift in Sources */,
 				04972A402C7C3BE20088AA0E /* AppDelegate.swift in Sources */,
 				04972A422C7C3BE20088AA0E /* SceneDelegate.swift in Sources */,
