@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23G93" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Measurement" representedClassName="Measurement" syncable="YES">
+        <attribute name="changeRange" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="diastole" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="heartRate" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="meanArtPress" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pulPress" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="systole" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="trials" toMany="YES" deletionRule="Nullify" destinationEntity="Trial" inverseName="parentMeaurement" inverseEntity="Trial"/>
+    </entity>
+    <entity name="Trial" representedClassName="Trial" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="diastole" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="heartRate" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="systole" attributeType="Integer 64" minValueString="0" maxValueString="300" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="parentMeaurement" maxCount="1" deletionRule="Cascade" destinationEntity="Measurement" inverseName="trials" inverseEntity="Measurement"/>
+    </entity>
 </model>
