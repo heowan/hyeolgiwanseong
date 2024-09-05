@@ -30,13 +30,16 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="취소"/>
                                         <connections>
-                                            <action selector="cancelPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RG0-7r-cNk"/>
+                                            <action selector="cancelButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RG0-7r-cNk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfs-F1-uxe">
                                         <rect key="frame" x="263.66666666666669" y="0.0" width="89.333333333333314" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="저장"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Kig-bB-LDh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -197,6 +200,14 @@
                             <constraint firstItem="Ue2-AL-fUe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="yRj-KH-P0g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="jSo-qH-mtx" id="dCI-qh-TaJ"/>
+                        <outlet property="diastoleField" destination="bzy-N3-SsG" id="Qlw-cB-HZy"/>
+                        <outlet property="heartRateField" destination="4sY-k7-NSY" id="Oyb-YD-TdO"/>
+                        <outlet property="stateDescription" destination="pg9-Gm-hjH" id="GWI-JT-wjG"/>
+                        <outlet property="stateLabel" destination="CYy-5J-o7T" id="eHj-sK-QRW"/>
+                        <outlet property="systoleField" destination="Qek-IQ-kNu" id="iR6-QO-sH8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
