@@ -20,6 +20,8 @@
 		04A943DB2C8705F40010D855 /* Measurement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D72C8705F40010D855 /* Measurement+CoreDataProperties.swift */; };
 		04A943DF2C8844B30010D855 /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A943DE2C8844B30010D855 /* Memo.storyboard */; };
 		04A943E12C8844DB0010D855 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943E02C8844DB0010D855 /* MemoViewController.swift */; };
+		04A943E52C898FC10010D855 /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943E42C898FC10010D855 /* MeasurementViewController.swift */; };
+		04A943E92C8AD2B30010D855 /* Measurement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A943E82C8AD2B30010D855 /* Measurement.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		04A943D72C8705F40010D855 /* Measurement+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04A943DE2C8844B30010D855 /* Memo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
 		04A943E02C8844DB0010D855 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		04A943E42C898FC10010D855 /* MeasurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewController.swift; sourceTree = "<group>"; };
+		04A943E82C8AD2B30010D855 /* Measurement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Measurement.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				04972A452C7C3BE20088AA0E /* Main.storyboard */,
 				04A943DE2C8844B30010D855 /* Memo.storyboard */,
+				04A943E82C8AD2B30010D855 /* Measurement.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			children = (
 				04972A432C7C3BE20088AA0E /* MainViewController.swift */,
 				04A943E02C8844DB0010D855 /* MemoViewController.swift */,
+				04A943E42C898FC10010D855 /* MeasurementViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A943DF2C8844B30010D855 /* Memo.storyboard in Resources */,
+				04A943E92C8AD2B30010D855 /* Measurement.storyboard in Resources */,
 				04972A4C2C7C3BE40088AA0E /* Assets.xcassets in Resources */,
 				04972A4F2C7C3BE40088AA0E /* Base in Resources */,
 				04972A472C7C3BE20088AA0E /* Base in Resources */,
@@ -185,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A943D82C8705F40010D855 /* Trial+CoreDataClass.swift in Sources */,
+				04A943E52C898FC10010D855 /* MeasurementViewController.swift in Sources */,
 				04A943D92C8705F40010D855 /* Trial+CoreDataProperties.swift in Sources */,
 				04A943DA2C8705F40010D855 /* Measurement+CoreDataClass.swift in Sources */,
 				04A943DB2C8705F40010D855 /* Measurement+CoreDataProperties.swift in Sources */,

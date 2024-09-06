@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="memo"/>
                                 <connections>
-                                    <segue destination="WGz-G9-dX3" kind="presentation" modalPresentationStyle="fullScreen" id="822-jm-yVm"/>
+                                    <action selector="memoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkh-Y7-Y5I"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -30,20 +30,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="H9T-w1-Foz"/>
+                    <connections>
+                        <outlet property="memoButton" destination="C0K-gr-ci8" id="EIg-uS-stU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971.7557251908397" y="-13.380281690140846"/>
-        </scene>
-        <!--MemoViewController-->
-        <scene sceneID="joB-Wj-0NQ">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MemoViewController" storyboardName="Memo" referencedIdentifier="MemoViewController" id="WGz-G9-dX3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="YjL-Sg-FgT"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9wL-F0-Y8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2652.6717557251909" y="-63.380281690140848"/>
+            <point key="canvasLocation" x="2898.4732824427479" y="-13.380281690140846"/>
         </scene>
     </scenes>
     <resources>
