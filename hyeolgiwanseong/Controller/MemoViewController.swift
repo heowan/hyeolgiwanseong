@@ -24,6 +24,7 @@ class MemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "측정 기록"
         
     }
 
@@ -58,7 +59,7 @@ class MemoViewController: UIViewController {
             print(error)
         }
         let storyboard = UIStoryboard(name: "Measurement", bundle: nil)
-        let measurementVC = storyboard.instantiateViewController(withIdentifier: "MeasurementVC") as! MeasurementViewController
+        let measurementVC = storyboard.instantiateViewController(withIdentifier: "MeasurementVC") as! MeasurementTableViewController
         self.navigationController?.pushViewController(measurementVC, animated: true)
             
 

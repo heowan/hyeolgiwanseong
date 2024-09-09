@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ue2-AL-fUe">
-                                <rect key="frame" x="20" y="99" width="353" height="286"/>
+                                <rect key="frame" x="20" y="89" width="353" height="286"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enn-kC-H5h">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EHo-5N-rW3">
-                                                <rect key="frame" x="138.33333333333334" y="30.666666666666657" width="76.666666666666657" height="39"/>
+                                                <rect key="frame" x="138.33333333333334" y="30.666666666666671" width="76.666666666666657" height="39"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정상혈압" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYy-5J-o7T">
                                                         <rect key="frame" x="10.333333333333311" y="0.0" width="55.666666666666657" height="19.333333333333332"/>
@@ -32,7 +32,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수축기 혈압 160" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-Gm-hjH">
-                                                        <rect key="frame" x="0.0" y="24.333333333333343" width="76.666666666666671" height="14.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="24.333333333333329" width="76.666666666666671" height="14.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
                                                         <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -189,7 +189,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="B5U-sI-Vxi" secondAttribute="bottom" constant="50" id="ZgR-gF-JO3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="B5U-sI-Vxi" secondAttribute="trailing" constant="20" id="lYW-SA-tnM"/>
                             <constraint firstItem="Ue2-AL-fUe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="yRj-KH-P0g"/>
-                            <constraint firstItem="Ue2-AL-fUe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="yzh-b0-H2P"/>
+                            <constraint firstItem="Ue2-AL-fUe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="yzh-b0-H2P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MFY-qU-05R"/>
