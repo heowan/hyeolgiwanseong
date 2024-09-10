@@ -6,13 +6,10 @@
 //
 
 import UIKit
-import CoreData
 
 class MemoViewController: UIViewController {
-    
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-    var selectMeasurement: Measurement?
+    let measureDataManager = MeasureDataManager()
     
     @IBOutlet weak var stateLabel: UILabel!
     @IBOutlet weak var stateDescription: UILabel!
@@ -32,34 +29,14 @@ class MemoViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    // 입력된 데이터를 저장하고 다음 화면으로 이동
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         
-        let newTrial = Trial(context: self.context)
-        newTrial.date = datePicker.date
-        newTrial.systole = Int64(systoleField.text!)!
-        newTrial.diastole = Int64(diastoleField.text!)!
-        newTrial.heartRate = Int64(heartRateField.text!)!
+        measureDataManager.saveData(date: datePicker.date, systole: systoleField.text, diastole: diastoleField.text, heartRate: heartRateField.text)
         
-        
-        if let measurement = selectMeasurement {
-            measurement.addToTrials(newTrial)
-            measurement.updateMeasureData()
-            
-        } else {
-            let newMeasurement = Measurement(context: self.context)
-            newMeasurement.date = datePicker.date
-            newMeasurement.addToTrials(newTrial)
-            newMeasurement.updateMeasureData()
-        }
-        
-        
-        do {
-            try context.save()
-        } catch {
-            print(error)
-        }
         let storyboard = UIStoryboard(name: "Measurement", bundle: nil)
         let measurementVC = storyboard.instantiateViewController(withIdentifier: "MeasurementVC") as! MeasurementViewController
+        measurementVC.measurement = measureDataManager.getMeasurement()
         self.navigationController?.pushViewController(measurementVC, animated: true)
             
 

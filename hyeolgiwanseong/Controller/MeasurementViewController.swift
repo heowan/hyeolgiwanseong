@@ -9,7 +9,7 @@ import UIKit
 
 class MeasurementViewController: UIViewController {
 
-    
+    var measurement: Measurement?
     let doneButton = UIButton(type: .system)
     
     override func viewDidLoad() {
@@ -17,6 +17,8 @@ class MeasurementViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         
         setupBottomBtn()
+        print(measurement?.trials?.allObjects)
+
     }
     
     // MARK: - setup doneButton

@@ -15,6 +15,7 @@
 		04972A4C2C7C3BE40088AA0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04972A4B2C7C3BE40088AA0E /* Assets.xcassets */; };
 		04972A4F2C7C3BE40088AA0E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 04972A4E2C7C3BE40088AA0E /* Base */; };
 		04A694AE2C8ED41F00FF74FC /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A694AD2C8ED41F00FF74FC /* MeasurementViewController.swift */; };
+		04A694B02C902EDB00FF74FC /* MeasureDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A694AF2C902EDB00FF74FC /* MeasureDataManager.swift */; };
 		04A943D82C8705F40010D855 /* Trial+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D42C8705F40010D855 /* Trial+CoreDataClass.swift */; };
 		04A943D92C8705F40010D855 /* Trial+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D52C8705F40010D855 /* Trial+CoreDataProperties.swift */; };
 		04A943DA2C8705F40010D855 /* Measurement+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A943D62C8705F40010D855 /* Measurement+CoreDataClass.swift */; };
@@ -35,6 +36,7 @@
 		04972A4E2C7C3BE40088AA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04972A502C7C3BE40088AA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A694AD2C8ED41F00FF74FC /* MeasurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewController.swift; sourceTree = "<group>"; };
+		04A694AF2C902EDB00FF74FC /* MeasureDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureDataManager.swift; sourceTree = "<group>"; };
 		04A943D42C8705F40010D855 /* Trial+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trial+CoreDataClass.swift"; sourceTree = "<group>"; };
 		04A943D52C8705F40010D855 /* Trial+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trial+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04A943D62C8705F40010D855 /* Measurement+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				04A943D52C8705F40010D855 /* Trial+CoreDataProperties.swift */,
 				04A943D62C8705F40010D855 /* Measurement+CoreDataClass.swift */,
 				04A943D72C8705F40010D855 /* Measurement+CoreDataProperties.swift */,
+				04A694AF2C902EDB00FF74FC /* MeasureDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				04972A442C7C3BE20088AA0E /* MainViewController.swift in Sources */,
 				04972A402C7C3BE20088AA0E /* AppDelegate.swift in Sources */,
 				04972A422C7C3BE20088AA0E /* SceneDelegate.swift in Sources */,
+				04A694B02C902EDB00FF74FC /* MeasureDataManager.swift in Sources */,
 				04972A4A2C7C3BE20088AA0E /* hyeolgiwanseong.xcdatamodeld in Sources */,
 				04A943E12C8844DB0010D855 /* MemoViewController.swift in Sources */,
 			);
