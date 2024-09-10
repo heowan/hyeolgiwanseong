@@ -59,7 +59,7 @@ class MemoViewController: UIViewController {
             print(error)
         }
         let storyboard = UIStoryboard(name: "Measurement", bundle: nil)
-        let measurementVC = storyboard.instantiateViewController(withIdentifier: "MeasurementVC") as! MeasurementTableViewController
+        let measurementVC = storyboard.instantiateViewController(withIdentifier: "MeasurementVC") as! MeasurementViewController
         self.navigationController?.pushViewController(measurementVC, animated: true)
             
 
