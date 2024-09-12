@@ -16,7 +16,7 @@ extension Trial {
         return NSFetchRequest<Trial>(entityName: "Trial")
     }
 
-    @NSManaged public var date: Date?
+    @NSManaged public var date: Date
     @NSManaged public var diastole: Int64
     @NSManaged public var heartRate: Int64
     @NSManaged public var systole: Int64

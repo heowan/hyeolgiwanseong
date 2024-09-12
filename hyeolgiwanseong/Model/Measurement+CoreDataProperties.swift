@@ -16,7 +16,7 @@ extension Measurement {
         return NSFetchRequest<Measurement>(entityName: "Measurement")
     }
 
-    @NSManaged public var date: Date?
+    @NSManaged public var date: Date
     @NSManaged public var diastole: Int64
     @NSManaged public var heartRate: Int64
     @NSManaged public var meanArtPress: Int64

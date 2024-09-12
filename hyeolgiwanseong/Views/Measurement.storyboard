@@ -564,6 +564,17 @@
                             <color key="tintColor" systemColor="systemPinkColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bloodPressure" destination="2mP-U8-Etg" id="yOx-9y-HdT"/>
+                        <outlet property="bloodPressureState" destination="pgi-GB-rM0" id="bdz-ts-oGA"/>
+                        <outlet property="heartRate" destination="c6p-Ga-FlT" id="cIQ-z6-d81"/>
+                        <outlet property="heartRateState" destination="Tdt-fn-o2R" id="eqK-8x-yrC"/>
+                        <outlet property="meanArtPress" destination="FWa-zp-Fr8" id="TAf-1h-Jkl"/>
+                        <outlet property="meanArtPressState" destination="GtE-3N-xqC" id="BGd-x3-t7I"/>
+                        <outlet property="pulPress" destination="rrK-7o-aWQ" id="3Mx-CT-rJO"/>
+                        <outlet property="pulPressState" destination="iaz-lb-TzC" id="PJ2-7s-Zn2"/>
+                        <outlet property="recordDate" destination="kv3-Ak-bKf" id="jCM-5N-tXv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-YV-w6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
