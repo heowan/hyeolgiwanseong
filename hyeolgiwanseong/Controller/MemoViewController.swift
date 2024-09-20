@@ -36,8 +36,15 @@ class MemoViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Measurement", bundle: nil)
         let measurementVC = storyboard.instantiateViewController(withIdentifier: "MeasurementVC") as! MeasurementViewController
-        measurementVC.measurement = measureDataManager.getMeasurement()
-        self.navigationController?.pushViewController(measurementVC, animated: true)
+        if let measurement = measureDataManager.getMeasurement() {
+            measurementVC.measurement = measurement
+            measurementVC.trialDataManager = TrialDataManager(selectMeasurement: measurement)
+            self.navigationController?.pushViewController(measurementVC, animated: true)
+        } else {
+            print("선택된 기록이 없거나 새로운 기록이 올바르게 생성되지 못했습니다.")
+        }
+        
+        
             
 
     }

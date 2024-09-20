@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -459,7 +460,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="76" id="tl5-0f-DQP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MeasurementCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MeasurementCell" rowHeight="76" id="tl5-0f-DQP" customClass="MeasurementCell" customModule="hyeolgiwanseong" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="429" width="393" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tl5-0f-DQP" id="XKN-0U-KVf">
@@ -501,7 +502,7 @@
                                                                             <subviews>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfV-jX-6rU">
                                                                                     <rect key="frame" x="0.0" y="0.3333333333333286" width="4" height="14"/>
-                                                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="4" id="3Ux-IY-h3M"/>
                                                                                         <constraint firstAttribute="height" constant="14" id="7fO-Zk-ca1"/>
@@ -546,6 +547,14 @@
                                                 <constraint firstAttribute="trailing" secondItem="XXl-fc-3o7" secondAttribute="trailing" id="wPY-lA-IAd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bloodPressLabel" destination="iIS-jn-lTM" id="T8a-Al-aCr"/>
+                                            <outlet property="cellView" destination="XXl-fc-3o7" id="3t4-95-sjF"/>
+                                            <outlet property="heartRateLabel" destination="OlG-CH-ZnG" id="nW2-2o-uaL"/>
+                                            <outlet property="stateBarView" destination="wfV-jX-6rU" id="KuV-e8-kzk"/>
+                                            <outlet property="stateLabel" destination="DZp-jn-jSy" id="Kgi-0N-YTu"/>
+                                            <outlet property="trialNumLabel" destination="hPK-ez-ILa" id="aVF-fH-1A0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -574,6 +583,7 @@
                         <outlet property="pulPress" destination="rrK-7o-aWQ" id="3Mx-CT-rJO"/>
                         <outlet property="pulPressState" destination="iaz-lb-TzC" id="PJ2-7s-Zn2"/>
                         <outlet property="recordDate" destination="kv3-Ak-bKf" id="jCM-5N-tXv"/>
+                        <outlet property="tableView" destination="Fzx-tG-RP0" id="Wzf-Zu-xSP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-YV-w6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -605,16 +615,16 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,6 +10,10 @@ import UIKit
 class MeasurementViewController: UIViewController {
 
     var measurement: Measurement?
+    var trialDataManager: TrialDataManager?
+    var trialList: [Trial]?
+    
+    @IBOutlet weak var tableView: UITableView!
     let doneButton = UIButton(type: .system)
     
     @IBOutlet weak var recordDate: UILabel!
@@ -27,13 +31,18 @@ class MeasurementViewController: UIViewController {
     @IBOutlet weak var meanArtPressState: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
         
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        trialList = trialDataManager?.fetchData()
         setupBottomBtn()
         setupData()
+        
+        
 
     }
     
@@ -82,5 +91,32 @@ class MeasurementViewController: UIViewController {
         meanArtPressState.text = StateHelper.getMeanArtPressState(MeanArtPress: measure.meanArtPress).rawValue
         
     }
-   
+    
+}
+
+// MARK: - TableView DataSorurce
+extension MeasurementViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return trialList?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MeasurementCell", for: indexPath) as? MeasurementCell else {return UITableViewCell()}
+        
+        if let trials = trialList {
+            let trial = trials[indexPath.row]
+            cell.trialNumLabel.text = "\(indexPath.row + 1)회차"
+            cell.data = trial
+        }
+        
+        return cell
+    }
+    
+    
+}
+
+// MARK: - TableView Delegate
+extension MeasurementViewController: UITableViewDelegate {
+    
 }
